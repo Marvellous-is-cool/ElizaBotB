@@ -13,6 +13,7 @@ from config import BIRTHDAY_GIRL_USERNAME, PICKUP_LINE_INTERVAL_MINUTES, CUSTOM_
 from dotenv import load_dotenv
 
 
+
 # Загрузка переменных окружения
 load_dotenv()
 
