@@ -12,9 +12,10 @@ def home():
     return "Бот работает!"
 
 def run():
+    port = int(os.environ.get('PORT', 8081))
     app.run(
         host='0.0.0.0',
-        port=int(os.getenv('PORT', 8081)),
+        port=port,
         debug=True,           # Включить режим отладки для авто-перезапуска
         use_reloader=True     # Явно включить перезапуск
     )
